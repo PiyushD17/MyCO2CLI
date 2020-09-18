@@ -57,19 +57,30 @@ sudo python3 setup.py install
 ```
 ### Executing commands using the tool
 * Now that you have installed the tool, you can simply use it from the Command Line when inside your project directory.
+
 ```console
 foo@bar:~$ myco2cli --transportation-method medium-diesel-car --distance 15 --unit-of-distance km
 Your trip caused 2.6kg of CO2-equivalent.
 ```
 
+```console
+foo@bar:~$ myco2cli --distance 1800.5 --transportation-method large-petrol-car
+Your trip caused 507.7kg of CO2-equivalent.
 ```
-myco2cli --distance 1800.5 --transportation-method large-petrol-car
 
-myco2cli --transportation-method train --distance 14500 --unit-of-distance m
+```console
+foo@bar:~$ myco2cli --transportation-method train --distance 14500 --unit-of-distance m
+Your trip caused 87g of CO2-equivalent.
+```
 
-myco2cli --transportation-method train --distance 14500 --unit-of-distance m --output kg
+```console
+foo@bar:~$ myco2cli --transportation-method train --distance 14500 --unit-of-distance m --output kg
+Your trip caused 0.1kg of CO2-equivalent.
+```
 
-myco2cli --unit-of-distance=km --distance 15 --transportation-method=medium-diesel-car
+```console
+foo@bar:~$ myco2cli --unit-of-distance=km --distance 15 --transportation-method=medium-diesel-car
+Your trip caused 2.6kg of CO2-equivalent.
 ```
 * To get more info about the tool:
 ```
