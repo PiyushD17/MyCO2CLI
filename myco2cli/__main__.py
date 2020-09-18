@@ -42,21 +42,6 @@ def main(transport, distance, unit, output, test):
         print("Please provide appropriate units for distance, i.e 'km' or 'm'.")
     elif output!="na" and output!="kg" and output!="g":
         print("Please provide appropriate units for output, i.e. 'kg' or 'g'.")
-    elif test==1:
-        with open('../emissions.json','r') as f:
-            co2emissions = json.load(f)
-        try:
-            co2eq,op,u = co2calc(co2emissions[transport], \
-            distance, unit, output)
-            print(f'Your trip caused {co2eq}{op} of CO2-equivalent.')
-        except ValueError as error:
-            print("You have entered an invalid value for distance. \
-Please provide numeric input for distance.")
-        except KeyError as error:
-            print("You have entered an invalid value for \
---transportation-method.")
-            print("Please refer help for possible input options to \
---transportation-method. \nUse 'python main.py --help'")
     else:
         with open('emissions.json','r') as f:
             co2emissions = json.load(f)
