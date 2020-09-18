@@ -40,8 +40,8 @@ sudo apt install python3-pip
 * Make sure you create an empty directory and initalize it with **git init** if using **git pull**.
 
 ```
-mkdir your_dir_name
-cd your_dir_name
+mkdir cli
+cd cli
 git init
 git pull https://github.com/PiyushD17/MyCO2CLI.git
 ```
@@ -59,27 +59,27 @@ sudo python3 setup.py install
 * Now that you have installed the tool, you can simply use it from the Command Line when inside your project directory.
 
 ```console
-foo@bar:~$ myco2cli --transportation-method medium-diesel-car --distance 15 --unit-of-distance km
+foo@bar:~/cli$ myco2cli --transportation-method medium-diesel-car --distance 15 --unit-of-distance km
 Your trip caused 2.6kg of CO2-equivalent.
 ```
 
 ```console
-foo@bar:~$ myco2cli --distance 1800.5 --transportation-method large-petrol-car
+foo@bar:~/cli$ myco2cli --distance 1800.5 --transportation-method large-petrol-car
 Your trip caused 507.7kg of CO2-equivalent.
 ```
 
 ```console
-foo@bar:~$ myco2cli --transportation-method train --distance 14500 --unit-of-distance m
+foo@bar:~/cli$ myco2cli --transportation-method train --distance 14500 --unit-of-distance m
 Your trip caused 87g of CO2-equivalent.
 ```
 
 ```console
-foo@bar:~$ myco2cli --transportation-method train --distance 14500 --unit-of-distance m --output kg
+foo@bar:~/cli$ myco2cli --transportation-method train --distance 14500 --unit-of-distance m --output kg
 Your trip caused 0.1kg of CO2-equivalent.
 ```
 
 ```console
-foo@bar:~$ myco2cli --unit-of-distance=km --distance 15 --transportation-method=medium-diesel-car
+foo@bar:~/cli$ myco2cli --unit-of-distance=km --distance 15 --transportation-method=medium-diesel-car
 Your trip caused 2.6kg of CO2-equivalent.
 ```
 * To get more info about the tool:
