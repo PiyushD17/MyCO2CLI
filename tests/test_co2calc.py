@@ -44,5 +44,19 @@ class TestCO2Calc(unittest.TestCase):
         self.assertEqual(co2calc(co2emissions['medium-diesel-car'],\
         24500,'m','na')[1],'g')
 
+    # test for ValueError when distance is non numeric
+    def test_Value_error(self):
+        with self.assertRaises(ValueError): co2calc(
+        co2emissions['medium-diesel-car'], '14500s','m','na')
+        with self.assertRaises(ValueError): co2calc(
+        co2emissions['train'], 'hehbfi','m','na')
+
+    # test for KeyError when transportation-method is invalid
+    def test_Key_error(self):
+        with self.assertRaises(KeyError): co2calc(
+        co2emissions['medium-diesel-car1'], '14500','m','na')
+        with self.assertRaises(KeyError): co2calc(
+        co2emissions['gtrsgn'], '14500','m','na')
+
 if __name__=='__main__':
     unittest.main(buffer=True)
