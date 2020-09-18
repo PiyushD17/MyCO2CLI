@@ -31,12 +31,14 @@ class TestCO2Calc(unittest.TestCase):
         'g')[0],8.4)
 
     # test default output unit for distance unit==km and distance unit==m
-    def test_default_output(self):
+    def test_default_output_kg(self):
         self.assertEqual(co2calc(co2emissions['medium-diesel-car'],\
         15,'km','na')[1],'kg')
         self.assertEqual(co2calc(co2emissions['large-petrol-car'],\
         1800.5,'km','na')[1],'kg')
-        self.assertEqual(co2calc(co2emissions['train'],14500,'m',\
+	
+	def test_default_output_g(self):
+		self.assertEqual(co2calc(co2emissions['train'],14500,'m',\
         'na')[1],'g')
         self.assertEqual(co2calc(co2emissions['medium-diesel-car'],\
         24500,'m','na')[1],'g')
