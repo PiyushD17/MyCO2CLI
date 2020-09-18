@@ -31,6 +31,10 @@ CO2e per passenger per km is available for the following Transportation methods:
 pip3 install setuptools
 ```
 
+* You might need to install pip3 as well.
+```
+sudo apt install python3-pip
+```
 ## How to use?
 * Fork this repository.
 * Make sure you create an empty directory and initalize it with **git init** if using **git pull**.
