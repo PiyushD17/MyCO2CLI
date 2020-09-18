@@ -18,7 +18,6 @@ transport_help = """
 @click.option('--transportation-method','transport', required=True, \
 help=transport_help, default="default")
 
-@click.option('--test', help="For testing. Type '--test 1' for test mode", default=0)
 
 @click.option('--distance', required=True,
 help="Distance - by default in km. Please enter a numeric value. \
@@ -30,7 +29,7 @@ help="unit of distance: either m or km (default km).", default='km')
 @click.option('--output',
 help="Please specify the output units, either in kg or g.", default='na')
 
-def main(transport, distance, unit, output, test):
+def main(transport, distance, unit, output):
     """A CLI Tool that calculates CO2 equivalent emissions
     for different vehicles. To use this tool, the transportation-method and
     distance arguments are mandatory.
