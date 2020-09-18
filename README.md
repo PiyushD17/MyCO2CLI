@@ -39,7 +39,7 @@ pip3 install setuptools
 mkdir your_dir_name
 cd your_dir_name
 git init
-git pull https://github.com/PiyushD17/CO2-Tool.git
+git pull https://github.com/PiyushD17/MyCO2CLI.git
 ```
 
 * Or, you can directly download the zip file.
