@@ -27,19 +27,19 @@ CO2e per passenger per km is available for the following Transportation methods:
 * This tool will also need the **python setuptools** library to be installed.
 * Install the library using the following command
 
-```
+```console
 pip3 install setuptools
 ```
 
 * You might need to install pip3 as well in case the above command does not work.
-```
+```console
 sudo apt install python3-pip
 ```
 ## How to use?
 * Fork this repository.
 * Make sure you create an empty directory and initalize it with **git init** if using **git pull**.
 
-```
+```console
 mkdir cli
 cd cli
 git init
@@ -52,7 +52,7 @@ git pull https://github.com/PiyushD17/MyCO2CLI.git
 * Ensure that you are in the project directory (same directory as of the **setup.py** file).
 * Now, you can install the tool from here.
 
-```
+```console
 sudo python3 setup.py install
 ```
 ### Executing commands using the tool
@@ -83,15 +83,14 @@ foo@bar:~/cli$ myco2cli --unit-of-distance=km --distance 15 --transportation-met
 Your trip caused 2.6kg of CO2-equivalent.
 ```
 * To get more info about the tool:
-```
+```console
 myco2cli --help
 ```
 ### Testing the tool
 * To test the tool, **cd** into the directory that contains the test script: **test_co2calc.py**.
 * Run the tests
 
-```
+```console
 cd tests
-
 python3 test_co2calc.py
 ```
