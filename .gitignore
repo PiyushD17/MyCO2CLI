@@ -1,0 +1,11 @@
+/myco2cli.egg-info/
+/myco2cli_pkg.egg-info/
+/dist/
+/build/
+.settings/
+.project
+.classpath
+*.pyc
+/dokenv/
+/__pycache__/
+/testenv/
