@@ -77,7 +77,7 @@ myco2cli --help
 * Run the tests
 
 ```
-cd myco2cli
+cd tests
 
 python3 test_co2calc.py
 ```
