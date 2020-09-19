@@ -28,22 +28,28 @@ CO2e per passenger per km is available for the following Transportation methods:
 * Install the library using the following command
 
 ```console
-pip3 install setuptools
+foo@bar:~$ pip3 install setuptools
 ```
 
 * You might need to install pip3 as well in case the above command does not work.
 ```console
-sudo apt install python3-pip
+foo@bar:~$ sudo apt install python3-pip
 ```
 ## How to use?
 * Fork the following repository: https://github.com/PiyushD17/MyCO2CLI.git.
 * Make sure you create an empty directory and initalize it with **git init** if using **git pull**.
 
 ```console
-mkdir cli
-cd cli
-git init
-git pull https://github.com/PiyushD17/MyCO2CLI.git
+foo@bar:~$ mkdir cli
+```
+```console
+foo@bar:~$ cd cli
+```
+```console
+foo@bar:~/cli$ git init
+```
+```console
+foo@bar:~/cli$ git pull https://github.com/PiyushD17/MyCO2CLI.git
 ```
 
 * Or, you can directly download the zip file.
@@ -92,5 +98,7 @@ myco2cli --help
 
 ```console
 foo@bar:~/cli$ cd tests
+```
+```console
 foo@bar:~/cli/tests $python3 test_co2calc.py
 ```
