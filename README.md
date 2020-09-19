@@ -100,5 +100,5 @@ myco2cli --help
 foo@bar:~/cli$ cd tests
 ```
 ```console
-foo@bar:~/cli/tests $python3 test_co2calc.py
+foo@bar:~/cli/tests$ python3 test_co2calc.py
 ```
