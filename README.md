@@ -36,7 +36,7 @@ pip3 install setuptools
 sudo apt install python3-pip
 ```
 ## How to use?
-* Fork this repository.
+* Fork the following repository: https://github.com/PiyushD17/MyCO2CLI.git.
 * Make sure you create an empty directory and initalize it with **git init** if using **git pull**.
 
 ```console
@@ -53,7 +53,7 @@ git pull https://github.com/PiyushD17/MyCO2CLI.git
 * Now, you can install the tool from here.
 
 ```console
-sudo python3 setup.py install
+foo@bar:~/cli$ sudo python3 setup.py install
 ```
 ### Executing commands using the tool
 * Now that you have installed the tool, you can simply use it from the Command Line when inside your project directory.
@@ -91,6 +91,6 @@ myco2cli --help
 * Run the tests
 
 ```console
-cd tests
-python3 test_co2calc.py
+foo@bar:~/cli$ cd tests
+foo@bar:~/cli/tests $python3 test_co2calc.py
 ```
