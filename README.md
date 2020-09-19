@@ -31,7 +31,7 @@ CO2e per passenger per km is available for the following Transportation methods:
 foo@bar:~$ pip3 install setuptools
 ```
 
-* You might need to install pip3 as well in case the above command does not work.
+* You might need to install pip3 as well in case the above command does not work and retry installing the **setuptools library**.
 ```console
 foo@bar:~$ sudo apt install python3-pip
 ```
